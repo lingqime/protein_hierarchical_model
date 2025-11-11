@@ -1,0 +1,3 @@
+#term ID	term description	observed gene count	background gene count	strength	signal	false discovery rate	matching proteins in your network (IDs)	matching proteins in your network (labels)
+WP5095	Overview of proinflammatory and profibrotic mediators	7	126	1.04	0.63	0.0039	9606.ENSP00000006053,9606.ENSP00000219235,9606.ENSP00000231228,9606.ENSP00000263851,9606.ENSP00000296026,9606.ENSP00000296545,9606.ENSP00000299855	CX3CL1,CCL22,IL12B,IL7,CXCL3,IL15,MMP3
+WP5072	Modulators of TCR signaling and T cell activation	5	61	1.21	0.58	0.0081	9606.ENSP00000339186,9606.ENSP00000342681,9606.ENSP00000345492,9606.ENSP00000378845,9606.ENSP00000391592	GRAP2,CD5,SH2B3,LAT,PTPN6
