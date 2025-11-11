@@ -143,3 +143,26 @@ $$
 Additional analyses incorporated STRING-DB.
 
 ---
+
+## 7. Data Preprocessing Notebook
+
+We provide the notebook **`Data Preprocess.ipynb`**, which demonstrates how preprocessing was performed on both:
+
+1. **Clinical variables** — cleaning, harmonization, handling missing values, and encoding
+2. **Olink raw NPX data** — normalization, quality control, and restructuring into a unified machine-learning input format
+
+After preprocessing, the resulting dataset is organized into a structured table suitable for model training.  
+A schematic example of the expected format is shown below:
+
+| ID  | Protein_1 | Protein_2 | Protein_3 | ... |
+|-----|-----------|-----------|-----------|-----|
+| ID1 | 0.56      | 2.14      | 1.98      | ... |
+| ID2 | 0.61      | 2.21      | 2.10      | ... |
+| ID3 | 0.44      | 2.05      | 2.02      | ... |
+| ... | ...       | ...       | ...       | ... |
+
+- **`ID`** uniquely identifies each patient/sample  
+- Each **Protein_x** column represents a normalized NPX-derived feature from the Olink panels  
+- Additional curated clinical variables (if included) are merged by sample ID  
+
+This processed matrix is then used as the direct input to the hierarchical machine-learning pipeline.
